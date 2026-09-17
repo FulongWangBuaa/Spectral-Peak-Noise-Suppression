@@ -1,18 +1,18 @@
-## 1. Overview
+# 1. Overview
 Suppression of abnormal spectral peaks in the power spectral density of MEG/EEG signals for improved spectral analysis and noise characterization.
 
 ---
 
-## 2. Usage Examples
+# 2. Usage Examples
 
-# S3P
+## S3P
 ```python
 from wfl_preproc_s3p import s3p
 raw = mne.io.read_raw_fif(raw_path,preload=True)
 raw_s3p = s3p(raw_filt,raw_room_filt,fmin=28,fmax=33,n_noise=2)
 ```
 
-# Spectrum interpolation
+## Spectrum interpolation
 ```python
 from wfl_preproc_spectrum_interpolation import spectrum_interpolation
 raw = mne.io.read_raw_fif(raw_path,preload=True)
