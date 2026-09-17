@@ -32,6 +32,8 @@ dftneighbourwidth = [2]
 raw_interpolation = spectrum_interpolation(raw,Fl, dftbandwidth, dftneighbourwidth)
 ```
 
+---
+
 # Acknowledgements
 - [1] Leske S., Dalal S. S. Reducing Power Line Noise in EEG and MEG Data via Spectrum Interpolation[J]. NeuroImage, 2019,189: 763-776. [DOI: https://doi.org/10.1016/j.neuroimage.2019.01.026](https://doi.org/10.1016/j.neuroimage.2019.01.026)
 - [2] Ramírez R R, Kopell B H, Butson C R, et al. Spectral signal space projection algorithm for frequency domain MEG and EEG denoising, whitening, and source imaging[J]. NeuroImage, 2011, 56(1): 78-92. [DOI: https://doi.org/10.1016/j.neuroimage.2011.02.002](https://doi.org/10.1016/j.neuroimage.2011.02.002)
