@@ -13,8 +13,8 @@ raw = mne.io.read_raw_fif(raw_path,preload=True)
 raw_room = mne.io.read_raw_fif(raw_room_path,preload=True)
 
 # filter
-raw_filt = raws[0].copy().filter(2, 45, fir_design='firwin').notch_filter(50)
-raw_room_filt = raws[1].copy().filter(2, 45, fir_design='firwin').notch_filter(50)
+raw_filt = raw.copy().filter(2, 45, fir_design='firwin').notch_filter(50)
+raw_room_filt = raw_room.copy().filter(2, 45, fir_design='firwin').notch_filter(50)
 
 # s3p
 raw_s3p = s3p(raw_filt,raw_room_filt,fmin=28,fmax=33,n_noise=2)
