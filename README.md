@@ -18,6 +18,7 @@ raw_room_filt = raw_room.copy().filter(2, 45, fir_design='firwin').notch_filter(
 
 # s3p
 # Since the spike interference is centered at 30 Hz, S3P is applied exclusively to the 28–33 Hz frequency band
+# n_noise denotes the number of noise components removed
 raw_s3p = s3p(raw_filt,raw_room_filt,fmin=28,fmax=33,n_noise=2)
 ```
 
